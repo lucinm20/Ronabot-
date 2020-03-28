@@ -1,0 +1,19 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+
+    motor(0,-80);
+    motor(2,-80);
+    msleep(2000);
+
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+   ao();
+
+    return 0;
+}
