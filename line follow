@@ -1,0 +1,49 @@
+#include <kipr/botball.h>
+
+void turn_left();
+void turn_right();
+
+int main()
+{
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+
+    motor(0,-80);
+    motor(2,-80);
+    msleep(2000);
+
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+}
+    printf("follow the line\n");
+
+    { 
+    if (anolog(0)>1600)
+    {
+      turn_right();
+    }
+        else
+        {
+           turn_left();
+        }
+    }
+}
+    
+   ao();
+
+    return 0;
+}
+           
+void turn_right()
+           {
+               motor(0,10);
+               motor(2,80);
+    
+           }
+void turn_left()
+           {
+               motor(0,80);
+               motor(2,10);
+           }
