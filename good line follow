@@ -1,0 +1,35 @@
+#include <kipr/botball.h>
+
+int anolog= 0;
+int main()
+{
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+
+    motor(0,-80);
+    motor(2,-80);
+    msleep(2000);
+
+    motor(0,80);
+    motor(2,80);
+    msleep(2000);
+
+    printf("follow the line\n");
+{
+     if (anolog > 3800)
+        {
+            motor(0,5);
+            motor(2,90);
+        }
+        else
+        {
+            motor(0,90);
+            motor(2,5);
+        }
+    }
+
+    ao();
+    
+    return 0;
+}
