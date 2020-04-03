@@ -1,0 +1,71 @@
+
+int anolog= 0;
+int l_motor= 2;
+int r_motor= 0;
+int main()
+{
+   {
+  motor(l_motor, 50);
+  motor(r_motor, 50);
+  msleep(2500);
+    }
+  {
+  motor(l_motor, -50);
+  motor(r_motor, -50);
+  msleep(2000);
+   }
+ {
+  motor(l_motor, 50);
+  motor(r_motor, 50);
+  msleep(2000);
+  
+  }
+
+    printf("follow the line\n");
+{
+     if (anolog > 3800)
+        {
+            motor(0,5);
+            motor(2,90);
+        }
+        else
+        {
+            motor(0,90);
+            motor(2,5);
+        }
+
+    
+    {
+    motor(l_motor, -50);
+    motor(r_motor, 50);
+    msleep(800);
+    
+}
+    {
+        motor(l_motor, 50);
+  motor(r_motor, 50);
+  msleep(2000);
+ 
+  }
+
+   printf("follow the line\n");
+{
+     if (anolog > 3800)
+        {
+            motor(0,5);
+            motor(2,90);
+        }
+        else
+        {
+            motor(0,90);
+            motor(2,5);
+        }
+
+}
+
+}
+
+    ao();
+    
+    return 0;
+}
