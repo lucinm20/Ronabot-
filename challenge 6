@@ -1,0 +1,24 @@
+int l_motor=0;
+int r_motor=2;
+int main()
+{
+
+int forward;
+	
+	void move();{
+	}
+for(forward=1; forward<= 10; forward++){
+		printf("forward is %d \n", forward);
+		}
+	
+
+		return 0;
+		
+}
+
+void move(){
+	motor(l_motor,100);
+	motor(r_motor,100);
+	msleep(6000);
+	ao();
+}
